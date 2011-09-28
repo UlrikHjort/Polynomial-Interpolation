@@ -1,0 +1,23 @@
+Interpolation of a data set by a Newton's divided differences interpolation polynomial.
+
+Usage: Create a data set file with the data to interpolate and call the Interpolate 
+procedure with the filename as argument. A polynomial is returned at the form:
+
+X^N + X^(N-1) + ...  + X + c
+
+and a accuracy test is done to verify the accuracy of the generated polynomial. The 
+accuracy is defined in the range 0.0 .. 1.0.
+
+Data set format:
+---------------
+
+The data set file contain two column one for the X values and one for the F(X) values:
+
+ X  F(X)
+1.0  1.0
+2.0  4.0
+3.0  9.0
+4.0  16.0
+
+
+Remember to end the data files with a blank line.

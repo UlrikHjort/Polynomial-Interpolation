@@ -35,7 +35,7 @@ package body Divided_Differences is
    --------------------------------------------------------------------------
    function Error_Test(Cofficients : in Float_Array_T; X : in Float; FX : in Float)
                       return Float is
-      Error : Float := 0.0;
+
       Res   : Float := 0.0;
    begin
        for I in Cofficients'First .. Cofficients'Last loop
@@ -96,7 +96,6 @@ package body Divided_Differences is
                                             FX_Values : in out  Float_Array_T) is
 
       Data_File  : FILE_TYPE;
-      Data_Value : Float;
       Index : Positive := 1;
 
    begin
